@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dev Shah</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/custom.css" type="text/css"> -->
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon  ">
+                   <b class="fas-fw"> <span>Logo</span> </b>
+
+                </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i class="fa fa-fw fa-chart-pie"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-unlock-alt"></i>
+                    <span>Tatics Vault</span></a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-users"></i>
+                    <span>Team</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Schedule Generator</span></a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Weekly Training Plans</span></a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                   <i class="fas fa-chart-bar"></i>
+                    <span>Team Metrics</span></a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-cog"></i>
+                    <span>Customization</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+
+        </ul>
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        </li>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="https://devshah7543.github.io/portfolio/" id="userDropdown" role="button"
+                                 >
+
+                                <img class="img-profile rounded-circle"
+                                    src="https://devshah7543.github.io/portfolio/img.jpg"><span>  <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="padding-left: 8px;">Dev Shah </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <!-- Begin Page Content -->
+
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Add New Schedule</button>
+                  </div>
+
+                            <!-- Content Row -->
+<!--dummy session 1 -->
+                            <section >
+                                      <div class="accordion accordion-flush">
+                                    <div class="accordion-item" >
+                                      <div id="flush-collapseA" class="accordion-collapse collapse" aria-labelledby="flush-headingA" data-bs-parent="#accordionFlushExample">
+                                      <div class="flex align-items-center justify-content-centre" style="padding-left: 10px; padding-right: 10px; border-bottom-width: 10px; padding-bottom: 10px;" >
+                                      </div>
+                                  </div>
+                                  </div>
+
+
+                                      <br>
+                                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item" >
+                                      <h2 class="accordion-header" id="flush-headingA">
+                                        <button id="collapeDiv" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseA" aria-expanded="false" aria-controls="flush-collapseA" style="padding-bottom: 5px; padding-top: 10px;"><div class="form-row">
+                                      <div class="form-group " style="margin-bottom: 0px;height: 47px;">
+                                        <label for="inputEmail4" style="margin-bottom: 0px;"><b id="heading1">Winter Training Schedule 1</b></label><br>
+                                        <code style="padding-left: 0px; padding-top: 5px;"><span id="weeks">4 </span>  Weeks |  12 session</code>
+
+                                      </div>
+                                      </div>
+                                        </button>
+
+                                      </h2>
+
+                                      <div id="flush-collapseA" class="accordion-collapse collapse " aria-labelledby="flush-headingA" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body" style="padding: .5rem 1.25rem">
+
+                                  </div>
+                                   <div class="d-flex align-items-center justify-content-between" style="padding-left: 10px;padding-right: 10px;">
+                                    <div class="form-row">
+                                      <div class="form-group col-auto" style="padding-right: 5px;margin-bottom: 0px;">
+                                        <label for="inputEmail4" style="margin-bottom: 0px;"><code>Start Date</code></label>
+                                       <p style="padding-top: 0px;"><span id="s_date1">25 January 2021 </span></p>
+                                      </div>
+                                      <div class="form-group col-auto" style="padding-left: 5px;margin-bottom: 0px;">
+                                        <label for="inputPassword4" style="margin-bottom: 0px;"><code>End Date</code></label>
+                                        <p style="padding-top: 0px;"><span id="s_date2">19 February 2021 </span></p>
+                                      </div></div><div class="d-flex align-items-center justify-content-between" >
+                                    <button type="button" class="btn btn-primary" style="margin-bottom: 20px;">Update</button></div>
+                                  </div>
+
+                                      <div class="flex align-items-center justify-content-between" style="padding-left: 10px; padding-right: 10px; border-bottom-width: 10px;padding-bottom: 10px; padding-top: 10px; margin: auto; display: block">
+                                      <button class="btn btn-outline-primary " type="radio" style="margin: 0 10px;">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Sunday</label>
+                                      </div>
+                                      </button>
+
+                                      <button class="btn btn-outline-primary " type="button" style="margin: 0 10px;">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox" value="option1\2">
+                                        <label class="form-check-label" for="inlineCheckbox1">Monday</label>
+                                      </div>
+                                      </button>
+
+                                        <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox" value="option3">
+                                        <label class="form-check-label" for="inlineCheckbox1">Tuesday</label>
+                                      </div>
+                                      </button>
+
+                                                          <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox" value="option4">
+                                        <label class="form-check-label" for="inlineCheckbox1">Wednesday</label>
+                                      </div>
+                                      </button>
+
+                                      <button class="btn btn-outline-primary" type="button" style="margin: 0 10px;">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox" value="option5">
+                                        <label class="form-check-label" for="inlineCheckbox1">Thursday</label>
+                                      </div>
+                                      </button>
+
+                                      <button class="btn btn-outline-primary " type="button" style="margin: 0 10px;">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox" value="option6">
+                                        <label class="form-check-label" for="inlineCheckbox1">Friday</label>
+                                      </div>
+                                      </button>
+
+                                                          <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox" value="option7">
+                                        <label class="form-check-label" for="inlineCheckbox1">Saturday</label>
+                                      </div></div>
+                                      </button>
+                                  </div>
+                              </div>
+
+                            </div>
+                            </div>
+                            </section>
+
+<!-- dummy session 2  -->
+<section >
+          <div class="accordion accordion-flush">
+        <div class="accordion-item" >
+          <div id="flush-collapseB" class="accordion-collapse collapse" aria-labelledby="flush-headingB" data-bs-parent="#accordionFlushExample">
+          <div class="flex align-items-center justify-content-centre" style="padding-left: 10px; padding-right: 10px; border-bottom-width: 10px; padding-bottom: 10px;" >
+          </div>
+      </div>
+      </div>
+
+
+          <br>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item" >
+          <h2 class="accordion-header" id="flush-headingB">
+            <button id="collapeDiv" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-B" aria-expanded="false" aria-controls="flush-collapseB" style="padding-bottom: 5px; padding-top: 10px;"><div class="form-row">
+          <div class="form-group " style="margin-bottom: 0px;height: 47px;">
+            <label for="inputEmail4" style="margin-bottom: 0px;"><b id="heading1">Winter Training Schedule 2</b></label><br>
+            <code style="padding-left: 0px; padding-top: 5px;"><span id="weeks">4 </span>  Weeks |  12 session</code>
+
+          </div>
+          </div>
+            </button>
+
+          </h2>
+
+          <div id="flush-B" class="accordion-collapse collapse " aria-labelledby="flush-headingB" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" style="padding: .5rem 1.25rem">
+
+      </div>
+       <div class="d-flex align-items-center justify-content-between" style="padding-left: 10px;padding-right: 10px;">
+        <div class="form-row">
+          <div class="form-group col-auto" style="padding-right: 5px;margin-bottom: 0px;">
+            <label for="inputEmail4" style="margin-bottom: 0px;"><code>Start Date</code></label>
+           <p style="padding-top: 0px;"><span id="s_date1">25 February 2021 </span></p>
+          </div>
+          <div class="form-group col-auto" style="padding-left: 5px;margin-bottom: 0px;">
+            <label for="inputPassword4" style="margin-bottom: 0px;"><code>End Date</code></label>
+            <p style="padding-top: 0px;"><span id="s_date2">19 March 2021 </span></p>
+          </div></div><div class="d-flex align-items-center justify-content-between" >
+        <button type="button" class="btn btn-primary" style="margin-bottom: 20px;">Update</button></div>
+      </div>
+
+          <div class="flex align-items-center justify-content-between" style="padding-left: 10px; padding-right: 10px; border-bottom-width: 10px;padding-bottom: 10px; padding-top: 10px; margin: auto; display: block">
+          <button class="btn btn-outline-primary " type="radio" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Sunday</label>
+          </div>
+          </button>
+
+          <button class="btn btn-outline-primary " type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option1\2">
+            <label class="form-check-label" for="inlineCheckbox1">Monday</label>
+          </div>
+          </button>
+
+            <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option3">
+            <label class="form-check-label" for="inlineCheckbox1">Tuesday</label>
+          </div>
+          </button>
+
+                              <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option4">
+            <label class="form-check-label" for="inlineCheckbox1">Wednesday</label>
+          </div>
+          </button>
+
+          <button class="btn btn-outline-primary" type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option5">
+            <label class="form-check-label" for="inlineCheckbox1">Thursday</label>
+          </div>
+          </button>
+
+          <button class="btn btn-outline-primary " type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option6">
+            <label class="form-check-label" for="inlineCheckbox1">Friday</label>
+          </div>
+          </button>
+
+                              <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option7">
+            <label class="form-check-label" for="inlineCheckbox1">Saturday</label>
+          </div></div>
+          </button>
+      </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+<!-- dummy session 3  -->
+<section >
+          <div class="accordion accordion-flush">
+        <div class="accordion-item" >
+          <div id="flush-collapseC" class="accordion-collapse collapse" aria-labelledby="flush-headingC" data-bs-parent="#accordionFlushExample">
+          <div class="flex align-items-center justify-content-centre" style="padding-left: 10px; padding-right: 10px; border-bottom-width: 10px; padding-bottom: 10px;" >
+          </div>
+      </div>
+      </div>
+
+
+          <br>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item" >
+          <h2 class="accordion-header" id="flush-headingC">
+            <button id="collapeDiv" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-C" aria-expanded="false" aria-controls="flush-collapseC" style="padding-bottom: 5px; padding-top: 10px;"><div class="form-row">
+          <div class="form-group " style="margin-bottom: 0px;height: 47px;">
+            <label for="inputEmail4" style="margin-bottom: 0px;"><b id="heading1">Winter Training Schedule 3</b></label><br>
+            <code style="padding-left: 0px; padding-top: 5px;"><span id="weeks">4 </span>  Weeks |  12 session</code>
+
+          </div>
+          </div>
+            </button>
+
+          </h2>
+
+          <div id="flush-C" class="accordion-collapse collapse " aria-labelledby="flush-headingC" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" style="padding: .5rem 1.25rem">
+
+      </div>
+       <div class="d-flex align-items-center justify-content-between" style="padding-left: 10px;padding-right: 10px;">
+        <div class="form-row">
+          <div class="form-group col-auto" style="padding-right: 5px;margin-bottom: 0px;">
+            <label for="inputEmail4" style="margin-bottom: 0px;"><code>Start Date</code></label>
+           <p style="padding-top: 0px;"><span id="s_date1">25 March 2021 </span></p>
+          </div>
+          <div class="form-group col-auto" style="padding-left: 5px;margin-bottom: 0px;">
+            <label for="inputPassword4" style="margin-bottom: 0px;"><code>End Date</code></label>
+            <p style="padding-top: 0px;"><span id="s_date2">19 April 2021 </span></p>
+          </div></div><div class="d-flex align-items-center justify-content-between" >
+        <button type="button" class="btn btn-primary" style="margin-bottom: 20px;">Update</button></div>
+      </div>
+
+          <div class="flex align-items-center justify-content-between" style="padding-left: 10px; padding-right: 10px; border-bottom-width: 10px;padding-bottom: 10px; padding-top: 10px; margin: auto; display: block">
+          <button class="btn btn-outline-primary " type="radio" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Sunday</label>
+          </div>
+          </button>
+
+          <button class="btn btn-outline-primary " type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option1\2">
+            <label class="form-check-label" for="inlineCheckbox1">Monday</label>
+          </div>
+          </button>
+
+            <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option3">
+            <label class="form-check-label" for="inlineCheckbox1">Tuesday</label>
+          </div>
+          </button>
+
+                              <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option4">
+            <label class="form-check-label" for="inlineCheckbox1">Wednesday</label>
+          </div>
+          </button>
+
+          <button class="btn btn-outline-primary" type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option5">
+            <label class="form-check-label" for="inlineCheckbox1">Thursday</label>
+          </div>
+          </button>
+
+          <button class="btn btn-outline-primary " type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option6">
+            <label class="form-check-label" for="inlineCheckbox1">Friday</label>
+          </div>
+          </button>
+
+                              <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineCheckbox" value="option7">
+            <label class="form-check-label" for="inlineCheckbox1">Saturday</label>
+          </div></div>
+          </button>
+      </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+
+
+
+<!-- Main -->
+                  <section id='schedule'>
+                            <div class="accordion accordion-flush" id="div1">
+                          <div class="accordion-item" >
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="flex align-items-center justify-content-centre" style="padding-left: 10px; padding-right: 10px; border-bottom-width: 10px; padding-bottom: 10px;" >
+                            </div>
+                        </div>
+                        </div>
+
+
+                            <br>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item" >
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button id="collapeDiv" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapseTwo" style="padding-bottom: 5px; padding-top: 10px;"><div class="form-row">
+                            <div class="form-group " style="margin-bottom: 0px;height: 47px;">
+                              <label for="inputEmail4" style="margin-bottom: 0px;"><b id="heading1">Winter Training Schedule 4</b></label><br>
+                              <code style="padding-left: 0px; padding-top: 5px;"><span id="weeks">4 </span>  Weeks |  12 session</code>
+
+                            </div>
+                            </div>
+                            <!-- <div class="flex-row-reverse">
+                              <div class=""><i class="fas fa-pen float-right"></i></div>
+                              <div class=""><i class="fas fa-trash float-right"></i></div>
+                            </div> -->
+
+                              </button>
+
+                            </h2>
+
+                            <div id="flush-collapse1" class="accordion-collapse collapse " aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body" style="padding: .5rem 1.25rem">
+
+                        </div>
+                         <div class="d-flex align-items-center justify-content-between" style="padding-left: 10px;padding-right: 10px;">
+                          <div class="form-row">
+                            <div class="form-group col-auto" style="padding-right: 5px;margin-bottom: 0px;">
+                              <label for="inputEmail4" style="margin-bottom: 0px;"><code>Start Date</code></label>
+                             <p style="padding-top: 0px;"><span id="s_date1">25 January 2021 </span></p>
+                            </div>
+                            <div class="form-group col-auto" style="padding-left: 5px;margin-bottom: 0px;">
+                              <label for="inputPassword4" style="margin-bottom: 0px;"><code>End Date</code></label>
+                              <p style="padding-top: 0px;"><span id="s_date2">19 February 2021 </span></p>
+                            </div></div><div class="d-flex align-items-center justify-content-between" >
+                          <button type="button" class="btn btn-primary" style="margin-bottom: 20px;">Update</button></div>
+                        </div>
+
+                            <div class="flex align-items-center justify-content-between" style="padding-left: 10px; padding-right: 10px; border-bottom-width: 10px;padding-bottom: 10px; padding-top: 10px; margin: auto; display: block">
+                            <button class="btn btn-outline-primary " type="radio" style="margin: 0 10px;">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="inlineCheckbox" value="option1">
+                              <label class="form-check-label" for="inlineCheckbox1">Sunday</label>
+                            </div>
+                            </button>
+
+                            <button class="btn btn-outline-primary " type="button" style="margin: 0 10px;">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="inlineCheckbox" value="option1\2">
+                              <label class="form-check-label" for="inlineCheckbox1">Monday</label>
+                            </div>
+                            </button>
+
+                                                <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="inlineCheckbox" value="option3">
+                              <label class="form-check-label" for="inlineCheckbox1">Tuesday</label>
+                            </div>
+                            </button>
+
+                                                <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="inlineCheckbox" value="option4">
+                              <label class="form-check-label" for="inlineCheckbox1">Wednesday</label>
+                            </div>
+                            </button>
+
+                            <button class="btn btn-outline-primary" type="button" style="margin: 0 10px;">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="inlineCheckbox" value="option5">
+                              <label class="form-check-label" for="inlineCheckbox1">Thursday</label>
+                            </div>
+                            </button>
+
+                            <button class="btn btn-outline-primary " type="button" style="margin: 0 10px;">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="inlineCheckbox" value="option6">
+                              <label class="form-check-label" for="inlineCheckbox1">Friday</label>
+                            </div>
+                            </button>
+
+                                                <button class="btn btn-outline-primary btn-outline-primary" type="button" style="margin: 0 10px;">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="inlineCheckbox" value="option7">
+                              <label class="form-check-label" for="inlineCheckbox1">Saturday</label>
+                            </div></div>
+                            </button>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        </section>
+
+<br>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+
+
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+<script type="text/javascript">
+var i = 1;
+  function addNewSchedule(){
+    i++;
+    var divContent = $('#div1').html();
+    var newDiv =  '<div class="accordion accordion-flush" id="div'+ i +'">' + divContent + '</div>';
+    $('#schedule').append(newDiv);
+    $('#div'+i+' #collapeDiv').attr('data-bs-target','#flush-collapse'+i);
+    $('#div'+i+' #flush-collapse1').attr('id','flush-collapse'+i);
+    $('#div'+i+' #heading1').text($("#s_name").val());
+    $('#div'+i+' #weeks').text($("#s_w").val());
+    $('#div'+i+' #s_date1').text($("#s_startD").val());
+    $('#div'+i+' #s_date2').text($("#s_endD").val());
+    $('#newsletterform').each(function(){
+        this.reset();
+    });
+    // $('#exampleModal').modal('hide');
+  }
+</script>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><b>Create New Schedule</b></h5>
+
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="newsletterform">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"><b>Schedule Name</b></label>
+            <input type="text" class="form-control" id="s_name" placeholder="Enter Name" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputCity">Start Date</label>
+              <input type="date" class="form-control" id="s_startD" placeholder="Select Start Date" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">End Date</label>
+              <input type="date" class="form-control" id="s_endD" placeholder="Select End Date" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputZip">Enter no. of weeks</label>
+              <input type="text" class="form-control" id="s_w" placeholder="Enter no. of weeks" required>
+            </div>
+          </div>
+
+
+      <div class="modal-footer d-sm-flex align-items-center justify-content-between ">
+        <button type="button" class="btn btn-secondary col-md-5" data-dismiss="modal">Close</button>
+        <button id="create" onclick="addNewSchedule()" type="submit" data-dismiss="modal" class="btn btn-primary col-md-6">Create</button>
+      </div>
+      </form>
+    </div>
+</div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+
+<footer>
+
+      <!-- Bootstrap core JavaScript-->
+
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Core plugin JavaScript-->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Custom scripts for all pages-->
+      <script src="js/sb-admin-2.min.js"></script>
+
+      <!-- Page level plugins -->
+      
+
+      <!-- Page level custom scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+</footer>
+
+</html>
